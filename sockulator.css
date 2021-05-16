@@ -1,0 +1,111 @@
+* {
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Helvetica";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: rgb(100, 211, 174);
+    width: 100%;
+}
+
+h2 {
+    color:rgb(106, 76, 189)
+
+}
+
+h3 {
+    color:  rgb(238, 148, 238);
+
+}
+
+h4 {
+    color:  rgb(238, 148, 238);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+
+main {
+    display: block;
+}
+
+table {
+    border: solid 2px rgb(242, 199, 59); 
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+
+th, td {
+    border: solid 1px  rgb(242, 199, 59); 
+    border-collapse: collapse;
+}
+
+th {
+    background-color:   rgb(233, 218, 170);
+}
+
+tr:hover {background: rgb(178, 236, 217);}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100px;
+}
+
+.form-box {
+    width: 100%
+    ;
+}
+
+#submit {
+    padding: 10px;
+    background-color: rgb(242, 199, 59);
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+form {
+    width: 65%;
+    border: solid 2px  rgb(238, 148, 238);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label {
+    margin-left: 10px;
+    width: 700px;
+    display: inline-block;
+    text-align: left;
+}
+
+.blank-row {
+    height: 20px;
+    background-color: #eee;
+}
