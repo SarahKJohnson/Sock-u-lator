@@ -25,6 +25,8 @@ header {
     padding: 10px;
 }
 
+nav a:visited
+
 h1 {
     text-align: center;
     background-color: rgb(100, 211, 174);
