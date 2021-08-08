@@ -7,14 +7,19 @@ html, body {
 }
 
 body {
-    background-color: #eee;
-    font-family: "Helvetica";
+    background-color: #FFFFF0;
+    font-family: Tahoma;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 p {
     margin: 0.5em 0 0.5em 0;
+}
+
+h1 {
+    color: #d3a920;
+    font-family: Didot;
 }
 
 header {
@@ -27,7 +32,7 @@ header {
 
 nav a:visited, 
 nav a:link {
-    color:rgb(106, 76, 189);
+    color:#800020;
     text-decoration: none;
 }
 
@@ -44,12 +49,12 @@ nav > ul > li {
 
 h1 {
     text-align: center;
-    background-color: rgb(100, 211, 174);
+    background-color: #02075D;
     width: 100%;
 }
 
 h2 {
-    color:rgb(106, 76, 189)
+    color:#800020;
 
 }
 
@@ -78,7 +83,7 @@ main {
 }
 
 table {
-    border: solid 2px rgb(242, 199, 59); 
+    border: solid 2px #02075D; 
     border-collapse: collapse;
     margin-left: 20px;
     margin-top: 10px;
@@ -88,15 +93,16 @@ table {
 
 
 th, td {
-    border: solid 1px  rgb(242, 199, 59); 
+    border: solid 1px  #02075D; 
     border-collapse: collapse;
 }
 
 th {
-    background-color:   rgb(233, 218, 170);
+    color: #d3a920;
+    background-color:   #02075D;
 }
 
-tr:hover {background: rgb(178, 236, 217);}
+tr:hover {background: #d3a920}
 
 input {
     padding: 10px;
@@ -111,7 +117,7 @@ input {
 
 #submit {
     padding: 10px;
-    background-color: rgb(245, 219, 133);
+    background-color: #d3a920;
     border-radius: 10px;
     margin-left: 10px;
 
@@ -119,7 +125,7 @@ input {
 
 form {
     width: 65%;
-    border: solid 2px  rgb(238, 148, 238);
+    border: solid 2px  #02075D;
     border-radius: 10px;
     padding: 20px;
 }
