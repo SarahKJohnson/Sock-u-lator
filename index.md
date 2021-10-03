@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sock-u-lator</title>
 </head>
-    <link rel="stylesheet" href="sockulator.css" type="text/css" />   
+    <link rel="stylesheet" href="src/sockulator.css" type="text/css" />   
 
     <body>
         <header>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="sockulatortables.html">Sizing Tables</a></li>
-                    <li><a href="sockulatorgallery.html">Gallery</a></li>
+                    <li><a href="src/sockulatortables.html">Sizing Tables</a></li>
+                    <li><a href="src/sockulatorgallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,10 +33,10 @@
                 <li><strong>Ankle Circumference:</strong> The circumference around the narrowest part of the ankle. It will generally be the same as the foot circumference but it is worth checking. If the measurements are different, see <a href="#ankle">Foot/Ankle Circumference Ratio</a></li>
             </ul>
         <p>Finally, you'll have to decide how long you want the leg of the sock to be. You can use a ruler to measure the distance up from the floor, or you can base it on height and gender (See the <a href="#leg-lengths">(Sock Leg Lengths Table).</a></p>
-        <p>If you're knitting for someone else and only know their shoe size, turn to the <a href="sockulatortables.html">Sock Sizing Tables</a></p>
+        <p>If you're knitting for someone else and only know their shoe size, turn to the <a href="src/sockulatortables.html">Sock Sizing Tables</a></p>
         <br>
        
-        <script src="sockulator.js" type="text/javascript">
+        <script src="src/sockulator.js" type="text/javascript">
         </script>
 
         <h2>Sock-u-lator Calculator</h2>
@@ -134,23 +134,11 @@
             </tr>
         </table>
                 
-
-        
     </main>
     <footer>Source: Custom Socks: Knit to fit your feet by Kate Atherley</footer>
     </body>
 
-
-
-
-
     </head>
-
-
-
-
-
-
 
 </html>
 
