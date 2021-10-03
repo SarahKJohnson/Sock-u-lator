@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sock-u-lator</title>
+</head>
+    <link rel="stylesheet" href="sockulator.css" type="text/css" />   
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="sockulatortables.html">Sizing Tables</a></li>
+                    <li><a href="sockulatorgallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <h1>Welcome to Sock-u-lator</h1>
+        <br>
+      
+    <main>
+        <div id="measurements">
+            <h2>Foot Measurements</h2>
+        </div>
+        <br>
+        <p>To use the Sock-u-lator, you'll need to determine your <a href="#gauge-info">gauge</a> and take a few measurements:</p>
+            <ul>
+                <li><strong>Foot Circumference:</strong> The circumference around the ball of the foot.</li>
+                <li><strong>Foot length:</strong> The length of the foot, from the tip of the longest toe to the back of the heel (this measurement is best taken when standing on a tape measure.)</li>
+                <li><strong>Ankle Circumference:</strong> The circumference around the narrowest part of the ankle. It will generally be the same as the foot circumference but it is worth checking. If the measurements are different, see <a href="#ankle">Foot/Ankle Circumference Ratio</a></li>
+            </ul>
+        <p>Finally, you'll have to decide how long you want the leg of the sock to be. You can use a ruler to measure the distance up from the floor, or you can base it on height and gender (See the <a href="#leg-lengths">(Sock Leg Lengths Table).</a></p>
+        <p>If you're knitting for someone else and only know their shoe size, turn to the <a href="sockulatortables.html">Sock Sizing Tables</a></p>
+        <br>
+       
+        <script src="sockulator.js" type="text/javascript">
+        </script>
+
+        <h2>Sock-u-lator Calculator</h2>
+        <br>
+        <form name="patternForm" id="patternForm">
+            <div class="form-box">
+            <label for="gauge">Enter the number of stitches per inch on your swatch, including half stitches if applicable: 
+            </label>
+            <input id="gauge" name="gauge" type="number" step="0.5" min="4" max="9" required>
+        </div class="form-box">
+            <div><label for="footCirc">Enter the foot/ankle circumference in inches here, rounded to the nearest half an inch: 
+            </label>
+            <input id="footCirc" name="footCirc" type="number" step="0.5" required min="5.5" max="11.5">
+        </div>
+        <div class="form-box">
+            <label for="footLength">Enter your foot length in inches: </label>
+            <input id="footLength" name="footLength" type="number">
+        </div>
+        <div>
+                <input id="submit" type="button" value="Submit" onclick="sockPattern()">
+            </div>
+        </form>
+
+        <div id="patternDiv"></div>
+       
+        <br>
+        <div id="gauge-info"></div>
+            <h2>Gauge</h2>
+        
+        <p>To determine your gauge, you'll need to knit a swatch in the round that's about 6 inches (15 cm) in circumference. To work out how many stitches to cast on, check the ball band for the number of stitches suggested for 4 inches (10 cm) and multiply that by 1.5. If you're not using sock yarn, multiply the number by 2. If necessary, round up to the nearest even number.</p>
+        
+        <br>
+        <div id="ankle">
+        <h2 id="ankle">Foot/Ankle Circumference Ratio</h2>
+        </div>
+        <p>The ankle circumference will probably be just about the same as the foot circumference. If you're not sure about this, divide your foot circumference by your ankle circumference. If your answer is greater than 1.1, your foot is larger than your ankle and you'll benefit from some adjustments to the fit. Similarly, if your answer is less than 0.9, your foot is smaller than your ankle and you'll also be better off making some adjustments.</p>
+        <p>Put the ankle circumference in the Sock You Later to determine how many stitches to cast on, then try again with your foot circumference. Knit the leg as normal then end the gusset decreases when you hit the number of stitches based on the foot circumference. Be sure to adjust than so that half of them are on the inste and the other half on the sole before you begin the toe decreases.</p>
+        <p>One limitation is that for a top-down sock, the heel is proportionate to the leg. If you're working a plan heel, you can base the number of stitches in the heel on the foot circumference rather than the ankle circumference - work increases or decreases at the bottom of the leg to adjust to the 
+            necessary foot stitches <em>before</em> you work the heel flap.</p>
+            <p>The fit of the foot is more important than the fit of the leg. In general, it's best to have too many stitches on the leg than too few. You can also always tighten the cuff with ribbing.</p>
+        
+    
+    
+        <br>
+        <div id="leg-lengths"></div>
+        <h2>Sock Leg Lengths</h2>
+        <p>Sock leg length can be based on gender and height for adults or on the age of the wearer for children.</p>
+        <br>
+        <table>
+            <tr>
+                <th scope="col">Age/Gender</th>
+                <th scope="col">Ankle Length</th>
+                <th scope="col" colspan="3">Calf Length</th>
+            </tr>
+            <tr>
+                <td>4 to 6 years</td>
+                <td rowspan="4">1" (2.5 cm)</td>
+                <td colspan="3">4 1/2"-5 1/2" (11.5-14 cm)</td>
+            </tr>
+            <tr>
+                <td>6 to 8 years</td>
+                <td colspan="3">5"-6 1/2" (12.5-15 cm)</td>
+            </tr>
+            <tr>
+                <td>8 to 10 years</td>
+                <td colspan="3">5 1/2"-6 1/2" (14-16.5 cm)</td>
+            </tr>
+            <tr>
+                <td>10 to 13 years</td>
+                <td colspan="3">6"-7" (15-18 cm)</td>
+            </tr>
+            <tr class="blank-row">
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Short</th>
+                <th scope="col">Regular</th>
+                <th scope="col">Tall</th>
+            </tr>
+            <tr>
+                <td>Women</td>
+                <td>1" (2.5 cm)</td>
+                <td>5"-6" (12.5 cm-15 cm)</td>
+                <td>7" (18 cm)</td>
+                <td>8" (20.5 cm)</td>
+            </tr>
+            <tr>
+                <td>Men</td>
+                <td>1 1/2" (3.8 cm)</td>
+                <td>7" (18 cm)</td>
+                <td>8" (20.5 cm)</td>
+                <td>9" (23 cm)</td>
+            </tr>
+        </table>
+                
+
+        
+    </main>
+    <footer>Source: Custom Socks: Knit to fit your feet by Kate Atherley</footer>
+    </body>
+
+
+
+
+
+    </head>
+
+
+
+
+
+
+
+</html>
 
